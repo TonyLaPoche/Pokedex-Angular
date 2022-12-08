@@ -8,6 +8,9 @@
     <p *ngIf="values == 'pikachu'">
         PIKACHUUUUUUUUUUUUUUUUUU !!!!
     </p>
+    <p *ngIf="values != 'pikachu'">
+        Indice il est jaune et electrique.
+    </p>
     <hr />
     <p *ngFor="let pokemon of pokemons" (click)="selectedPokemon(pokemon)">
         {{ pokemon.name }}
