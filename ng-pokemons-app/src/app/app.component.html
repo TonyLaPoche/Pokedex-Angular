@@ -5,6 +5,9 @@
         (blur)="values=box.value"
     > 
     <p> donnée saisi : {{ values }}</p> 
+    <p *ngIf="values == 'pikachu'">
+        PIKACHUUUUUUUUUUUUUUUUUU !!!!
+    </p>
     <hr />
     <p *ngFor="let pokemon of pokemons" (click)="selectedPokemon(pokemon)">
         {{ pokemon.name }}
