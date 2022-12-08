@@ -1,0 +1,11 @@
+<h1>{{ title }} !</h1>
+    <hr />
+    <input #box
+        (keyup.enter)="values=box.value"
+        (blur)="values=box.value"
+    > 
+    <p> donnée saisi : {{ values }}</p> 
+    <hr />
+    <p *ngFor="let pokemon of pokemons" (click)="selectedPokemon(pokemon)">
+        {{ pokemon.name }}
+    </p>
